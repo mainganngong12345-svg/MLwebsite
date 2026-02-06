@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trang web của Minh Long và Xuân Mai</title>
+	<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KHÁM PHÁ GIA LAI - XUÂN MAI & MINH LONG</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4; /* Nền xanh cực nhạt cho sang */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Banner đầu trang */
+        .header {
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #006633, #2e8b57);
+            color: #FFFFCC;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .logo img {
+            max-height: 100px;
+            border-radius: 50%;
+            border: 3px solid #FFFFCC;
+        }
+
+        .title {
+            flex: 3;
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Thanh menu */
+        nav {
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+        }
+
+        nav a, .dropbtn {
+            color: #006633;
+            text-align: center;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            border-radius: 25px;
+            border: none;
+            background: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        nav a:hover, .dropdown:hover .dropbtn {
+            background-color: #006633;
+            color: #FFFFCC;
+        }
+
+        /* Menu con */
+        .dropdown { position: relative; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            top: 100%;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+            border-radius: 0;
+        }
+
+        .dropdown-content a:hover { background-color: #f1f1f1; color: #006633; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        /* Bố cục nội dung chính */
+        .main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-bottom: 5px solid #006633;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #006633;
+            font-size: 22px;
+            border-left: 5px solid #ffcc00;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Danh sách địa điểm */
+        .list-location {
+            line-height: 1.8;
+            color: #444;
+            font-weight: 500;
+        }
+
+        /* Hình ảnh & Video */
+        .box img, .box video {
+            width: 100%;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+
+        /* Chân trang */
+        .footer-info {
+            background: #006633;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 20px;
+            color: #FFFFCC;
+            text-align: center;
+        }
+
+        .footer-info p { margin: 5px 0; }
+        
+        audio { width: 100%; margin-top: 10px; }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+        <img src="https://du-an-nho-cua-mkhoi.netlify.app/logo.jpg" alt="Logo">
+    </div>
+    <div class="title">KHÁM PHÁ GIA LAI</div>
+</div>
+
+<nav>
+    <a href="#home">Trang chủ</a>
+    <a href="#about">Giới thiệu</a> 
+    <div class="dropdown">
+        <button class="dropbtn">Lựa chọn ▼</button>
+        <div class="dropdown-content">
+            <a href="#sub1">Du Lịch</a>
+            <a href="#sub2">Ăn Uống</a>
+            <a href="#sub3">Check-in</a>
+        </div>
+    </div>
+    <a href="#contact">Liên hệ</a>
+    <a href="thành viên.html" target="_blank">Về chúng tôi</a>
+    <a href="https://ngoccs.edu.vn" target="_blank">Người hướng dẫn</a>
+</nav>
+
+<div class="main">
+    <div class="box">
+        <h1>📍 ĐỊA ĐIỂM NỔI TIẾNG</h1>
+        <div class="list-location">
+            1. Núi lửa Chư Đăng Ya <br>
+            2. Vườn quốc gia Kon Ka Kinh <br>
+            3. Hồ T’Nưng (Biển Hồ) <br>
+            4. Núi Hàm Rồng Gia Lai <br>
+            5. Khu bảo tồn Kon Chư Răng <br>
+            6. Thác Phú Cường <br>
+            7. Biển Hồ Chè <br>
+            8. Thung lũng cỏ hồng Glar <br>
+            9. Quảng trường Đại Đoàn Kết <br>
+            10. Chùa Minh Thành
+        </div>
+        <p style="color: #d4a017; font-weight: bold; margin-top: 15px;">✨ HÃY ĐẾN THAM QUAN NHÉ!</p>
+    </div>
+
+    <div class="box">
+        <h1>🍱 ẨM THỰC ĐẶC SẮC</h1>
+        <img src="https://dulichgialai.vn/files/common/du-lich-am-thuc-gia-lai-dia-chi-cac-quan-ngon-noi-tieng-gzim4.jpg" alt="Am thuc">
+    </div>
+
+    <div class="box">
+        <h1>🎶 ÂM THANH SỐNG ĐỘNG</h1>
+        <p>Giai điệu Tây Nguyên:</p>
+        <audio controls>
+            <source src="C:\Users\ADMIN\Downloads\y-jang-tuyn.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="box">
+        <h1>🎬 THANH ÂM MIỀN NÚI</h1>
+        <video controls>
+            <source src="C:\Users\ADMIN\Downloads\Gia Lai.mp4.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<div class="footer-info">
+    <p>👇 Liên hệ với chúng tớ qua đây</p>
+    <hr style="width: 50px; border: 1px solid #ffcc00;">
+    <p><strong>©️ NHÓM TÁC GIẢ:</strong> Nguyễn Xuân Mai - Nguyễn Minh Long 💗</p>
+    <p>📍 Lớp 12A1 - THPT NBK - Gia Lai</p>
+    <p>📧 Email: @gmail.com</p>
+</div>
+
+</body>
+</html>
+</head>
+<body>
+
+</body>
+</html>

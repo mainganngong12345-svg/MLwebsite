@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> XIN CHÀO BỌN MÌNH LÀ XUÂN MAI VÀ MINH LONG LỚP 12A1 </title>
+</head>
+<body>
+	<style type="text/css">
+	.init{margin: 20px; 
+		padding: 10px; 
+		border-style: solid;
+        background-color:#006633;
+		border-radius: 0px;
+		font-family: verdana;
+		font-size: 20px;
+	}
+    
+    .header {
+      display: flex;
+      color: #002200;
+      align-items: center;
+      border-radius: 8px;
+      /*box-shadow: 0 0 8px;*/
+    }
+    .logo {
+      flex: 1;
+      text-align: center;
+    }
+    .logo img {
+      max-height: 120px;
+    }
+    .title {
+      flex: 3;
+      font-size: 30px;
+      font-weight: bold;
+      color:#FFFFCC;
+      text-align: center;
+    }
+
+	 /* Định dạng cho thanh menu */
+        nav {
+            background-color: #006633;
+            overflow: hidden;
+            margin: 20px;
+            justify-content: center;
+            display: flex;
+            /*justify-content: space-between; */ /* Giãn đều nhau */
+            /*flex-grow: 1; */
+        }
+            
+
+    /* Định dạng cho các liên kết trong menu */
+        nav a {
+            float: left;
+            display: block;
+            color: #FFFFCC;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+    /* Hiệu ứng khi di chuột vào liên kết trong menu */
+        nav a:hover {
+            background-color: #98FB98;
+            color: #669966;
+        }
+
+	/* Định dạng menu con */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: #FFFFCC;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #98FB98;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* CSS link trong menu con */
+        .dropdown-content a {
+            float: none;
+            color: #336666;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+	/* Hiệu ứng khi di chuột vào liên kết trong menu */
+        .dropdown-content a:hover {
+            background-color: #006633;
+            color:  #F0E68C;
+            background-color: #006633;
+            color:  #F0E68C;
+        }
+		
+	   .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+    .main {margin: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      gap: 20px; /* Giãn khoảng cách giữa các ô */
+    }
+
+    .box {
+      flex: 1 1 calc(50% - 30px);
+      padding: 10px;
+      border: 1px solid;
+      box-sizing: border-box;
+      background-color: #99CC99;
+    }
+
+    /* Chân trang */
+    .footer{color: #006666;
+		border-radius: 10px;
+		padding: 20px;}
+	
+    h1{color: #006633; font-family: italic;}
+</style>
+
+<body>
+
+<div class="init header">
+  <div class="logo">
+    <img src="https://du-an-nho-cua-mkhoi.netlify.app/logo.jpg" alt="Err">
+  </div>
+  <div class="title">
+    KHÁM PHÁ GIA LAI
+  </div>
+</div>
+
+	
+<!-- Thanh menu -->
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a> 
+      
+        <!-- Menu Dịch vụ có menu con -->
+        <div class="dropdown">
+            <button class="dropbtn">Lựa chọn</button>
+            <div class="dropdown-content">
+                <a href="#sub1"> Du Lịch </a>
+                <a href="#sub2"> Ăn Uống </a>
+                <a href="#sub3"> Check-in </a>
+                
+            </div>
+        </div>
+        <a href="#contact">Liên hệ</a>
+        <a href="thành viên.html" target="_blank">Về chúng tôi
+        <body>
+
+        <a href="https://ngoccs.edu.vn" target="_blank">Người hướng dẫn</a>
+    </nav>
+
+		
+	<div class="main">
+	
+        <div class="box">
+            <h1> CÁC ĐỊA ĐIỂM DU LỊCH NỔI TIẾNG </h1>
+            <table>
+            <tr style="font-style: initial; color: #006633;"> <td width="300">    
+            1. Núi lửa Chư Đăng Ya <br>            
+            2. Vườn quốc gia Kon Ka Kinh <br>            
+            3. Hồ T’Nưng <br>  
+            4. Núi Hàm Rồng Gia Lai<br>
+            5. Khu bảo tồn thiên nhiên Kon Chư Răng<br>   
+            6. Thác Phú Cường<br>   
+            7. Biển Hồ Chè<br>   
+            8. Thung lũng cỏ hồng Glar<br> 
+            9. Quảng trường Đại Đoàn Kết<br>
+            10. Chùa Minh Thành<br>            
+            </td>
+            </td>
+        </tr>
+    </table>
+            <p style="color: #004400;"> <em> HÃY ĐẾN THAM QUAN NHÉ!</em>
+        </div>
+        <div class="box">
+            <h1> ẨM THỰC GIA LAI </h1>
+           <img src="https://dulichgialai.vn/files/common/du-lich-am-thuc-gia-lai-dia-chi-cac-quan-ngon-noi-tieng-gzim4.jpg" alt="Err" style="width:90%; height: auto;">
+        </div>
+        <div class="box">
+            <h1> ÂM THANH SỐNG ĐỘNG </h1>
+           <p> <audio src="C:\Users\ADMIN\Downloads\y-jang-tuyn.mp3" type="audio/mpeg" controls> </p>
+        </div>
+        <div class="box">
+            <h1> THANH ÂM MIỀN NÚI </h1>
+            <p> <video width="560" height="315" source src="C:\Users\ADMIN\Downloads\Gia Lai.mp4.mp4" type="video/mp4" controls></video>
+           </p>
+        </div>
+    </div>
+	   
+    <div class="init" style="background-color:#339966; box-shadow: 0 0 8px;">
+    <p> Liên hệ với chúng tớ qua đây 👇 </p>
+    </div>
+
+	<div class="init footer"> 
+		<div style="color: #FFFFCC;"> ©️ NHÓM TÁC GIẢ: Nguyễn Xuân Mai - Nguyễn Minh Long💗 </div>
+		<div style="color: #FFFFCC;"> 📧 Địa chỉ: Lớp 12A1 - THPT NBK - Gia Lai </div>
+        <div style="color: #FFFFCC;"> 📧 Email: @gmail.com </div>
+        </head>
+
+
+
+</body>
+</html>
